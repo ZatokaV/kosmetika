@@ -1,0 +1,39 @@
+.success {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.success__loader {
+  height: 100vh;
+}
+
+.success__title {
+  font-family: 'Foglihten';
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-bottom: 34px;
+  text-align: center;
+}
+
+.success__description {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.success__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 370px;
+  height: 42px;
+  background: #78020E;
+  color: #ffffff;
+  font-size: 13px;
+  border-radius: 24px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,122 @@
+:root {
+  --main-color: #78020e;
+}
+
+body {
+  color: #78020e;
+  background-color: #fffdfa;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.img-contain {
+  object-fit: contain;
+}
+
+input,
+textarea {
+  border-radius: 0px;
+}
+
+textarea,
+select,
+input:active,
+input:focus {
+  outline: none;
+}
+
+a,
+button {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border-radius: 0;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+select {
+  -webkit-appearance: none;
+}
+
+/* убираем стрелочки в числовых инпутах */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure {
+  margin: 0;
+  padding: 0;
+  font-weight: inherit;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+  /* Firefox */
+}
+
+/* Заборона скролу */
+input[type='number'] {
+  scroll-behavior: auto;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  main {
+    margin-top: 69px;
+    min-height: calc(100vh - 69px);
+  }
+}

@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Foglihten';
+  src: url('/fonts/Foglihten.otf') format('opentype');
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* Основной шрифт сайта */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+/* Унификация для всех элементов интерфейса */
+a,
+button,
+select,
+input,
+textarea,
+ul,
+li,
+input::placeholder {
+  font-family: 'Montserrat' !important;
+  font-weight: 400;
+}

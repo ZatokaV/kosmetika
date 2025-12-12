@@ -1,0 +1,261 @@
+.home__section {
+  margin-bottom: 40px;
+  margin-left: 36px;
+  margin-right: 36px;
+}
+
+/* HERO */
+.home__hero {
+  display: flex;
+  gap: 12px;
+  padding-bottom: 24px;
+}
+.home__hero-left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1;
+}
+.home__hero-right {
+  flex: 1;
+}
+
+.home__hero-overlay {
+  position: absolute;
+  top: 51px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.home__hero-title {
+  font-size: 48px;
+  font-weight: 500;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+.home__hero-text {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.home__hero-btn {
+  background-color: var(--main-color);
+  color: #fef9f3;
+  border-radius: 20px;
+  padding: 6px 16px;
+}
+
+/* BESTSELLERS */
+
+.home__section-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.home__categories-list {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.home__categories {
+  display: flex;
+  gap: 24px;
+  line-height: 120%;
+  font-size: 13px;
+}
+.home__categories-item {
+  color: #78020e4d;
+  &:hover {
+    color: var(--main-color);
+    text-decoration: underline;
+  }
+}
+.home__section-link {
+  display: flex;
+  white-space: nowrap;
+  gap: 10px;
+  border: 1px solid var(--main-color);
+  border-radius: 24px;
+  align-items: center;
+  padding: 12px 16px 12px 24px;
+}
+.home__section-link img {
+  height: 24px;
+  width: auto;
+  &:hover {
+    transform: scale(150%);
+  }
+}
+
+.home__products {
+  margin-bottom: 24px;
+}
+
+/* INFO + FAQ */
+
+.home__info {
+  display: flex;
+  gap: 12px;
+}
+.home__info-left {
+  position: relative;
+}
+.home__info-cta {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+
+  left: 23px;
+  bottom: 10px;
+
+  max-width: 276px;
+  width: 100%;
+}
+.home__info-btn-icon img {
+  height: 44px;
+  width: auto;
+}
+.home__info-image {
+  border-radius: 24px 0 0 24px;
+}
+
+.home__info-label {
+  align-self: flex-start;
+  background: rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(33px);
+  -webkit-backdrop-filter: blur(33px);
+  border-radius: 24px;
+  font-size: 13px;
+  line-height: 120%;
+  padding: 18px;
+  margin-bottom: 8px;
+}
+.home__info-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-transform: uppercase;
+
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(33px);
+  -webkit-backdrop-filter: blur(33px);
+  padding: 8px;
+}
+.home__info-btn-text {
+  text-align: left;
+  flex: 1;
+}
+.home__info-btn-text h3 {
+  padding: 10px 5px;
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+.home__info-btn-text p {
+  padding: 10px;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+.home__info-btn-icon {
+  flex-shrink: 0;
+  align-self: flex-end;
+}
+
+.home__faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  flex: 1;
+
+  margin-right: 10px;
+  margin-bottom: 40px;
+  margin-left: 64px;
+}
+
+.home__faq-item {
+  border-bottom: 1px solid #ffe2e6;
+}
+.home__faq-question {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 10px;
+  text-transform: uppercase;
+
+  list-style: none;
+  cursor: pointer;
+}
+.home__faq-answer {
+  font-size: 14px;
+  padding-left: 10px;
+  margin-top: 12px;
+}
+.home__faq-toggle {
+  font-size: 13px;
+  text-decoration: underline;
+}
+
+.home__faq-toggle::after {
+  content: "ВІДКРИТИ";
+}
+
+.home__faq-item[open] .home__faq-toggle::after {
+  content: "ЗАКРИТИ";
+}
+
+/* SALE */
+
+.home__sale-image {
+  border-radius: 24px;
+}
+.home__sale {
+  position: relative;
+}
+.home__sale-content {
+  position: absolute;
+  left: 68px;
+  bottom: 57px;
+}
+.home__sale-content{
+  display: flex;
+  flex-direction: column;
+  gap: 191px;
+  max-width: 623px;
+}
+.home__sale-info{
+  font-size: 48px;
+  font-weight: 500;
+
+}
+
+.home__sale-link {
+  display: flex;
+  border: 1px solid var(--main-color);
+  gap: 10px;
+  align-items: center;
+  padding: 10px 16px 10px 24px;
+  border-radius: 24px;
+  text-transform: uppercase;
+}
+.home__sale-link img {
+  width: 24px;
+  height: auto;
+}
+.home__sale-btn {
+  color: var(--main-color);
+  background-color: #fef9f3;
+  border-radius: 24px;
+  text-transform: uppercase;
+
+  padding: 14px 24px;
+}
+.home__sale-actions {
+  display: flex;
+  gap: 12px;
+}
