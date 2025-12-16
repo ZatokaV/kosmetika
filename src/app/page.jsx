@@ -32,7 +32,7 @@ export default function Home() {
           </div>
 
           <div className="home__hero-right">
-            <div className="home__hero-promo-content">
+            <div className="home__hero-promo-content home__tablet-element">
               <div className="home__hero-promo-title">обличчя</div>
               <div className="home__hero-promo-info">
                 <div className="home__hero-promo-info-top">
@@ -55,7 +55,7 @@ export default function Home() {
           <h2 className="home__section-title">Бестселери</h2>
 
           <nav className="home__categories">
-            <ul className="home__categories-list">
+            <ul className="home__categories-list home__tablet-element">
               <li className="home__categories-item">Обличчя</li>
               <li className="home__categories-item">Губи</li>
               <li className="home__categories-item">Тіло</li>
@@ -67,6 +67,11 @@ export default function Home() {
             </button>
           </nav>
         </div>
+        <ul className="home__categories-list home__tablet-element home__mobile-element ">
+          <li className="home__categories-item">Обличчя</li>
+          <li className="home__categories-item">Губи</li>
+          <li className="home__categories-item">Тіло</li>
+        </ul>
 
         <ul className="home__products">
           {products.map((product) => (

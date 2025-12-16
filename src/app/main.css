@@ -4,6 +4,10 @@
   margin-right: 36px;
 }
 
+.home__section-title{
+  font-family: 'Foglihten';
+}
+
 /* HERO */
 .home__hero {
   display: flex;
@@ -34,6 +38,7 @@
   padding: 20px;
 }
 .home__hero-title {
+  font-family: 'Foglihten';
   font-size: 48px;
   font-weight: 500;
   text-transform: uppercase;
@@ -238,6 +243,7 @@
 }
 
 .home__sale-info {
+  font-family: 'Foglihten';
   display: flex;
   flex-direction: column;
 
@@ -293,7 +299,8 @@
 }
 
 .home__hero-overlay-tablet,
-.home__hero-promo-content {
+.home__hero-promo-content,
+.home__mobile-element {
   display: none;
 }
 
@@ -316,8 +323,12 @@
     scrollbar-width: none;
     -ms-overflow-style: none;
   }
-  .home__products::-webkit-scrollbar {
+  .home__products::-webkit-scrollbar,
+  .home__mobile-element {
     display: none;
+  }
+  .home__sale-info{
+    color: #FFFDFA;
   }
   .home__products > li {
     min-width: 240px;
@@ -422,7 +433,7 @@
     height: 24px;
     width: auto;
     &:hover {
-      transform: scale(150%);
+      transform: scale(1.2);
     }
   }
   .home__hero-title {
@@ -487,5 +498,86 @@
   }
   .home__sale-content {
     padding: 122px 123px 57px 48px;
+  }
+}
+
+@media (max-width: 756px) {
+  .home__tablet-element {
+    display: none;
+  }
+  .home__sale-content {
+    padding: 41px 16px 42px 16px;
+  }
+  .home__hero {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .home__hero-left,
+  .home__hero-right {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    background-size: cover;
+    background-position: center;
+    min-height: auto;
+    height: auto;
+    flex: none;
+  }
+  .home__hero-left {
+    background-image: url(/images/main_1.png);
+  }
+  .home__hero-right {
+    background-image: url(/images/main_2.png);
+    padding: 0;
+  }
+  .home__desctop-element {
+    display: block;
+  }
+  .home__hero-title {
+    font-size: 24px;
+  }
+  .home__hero-text {
+    font-size: 13px;
+  }
+  .home__hero-btn {
+    color: var(--main-color);
+    background: transparent;
+    border: 1px solid var(--main-color);
+  }
+  .home__mobile-element {
+    display: block;
+  }
+  .home__mobile-element {
+    display: flex;
+    margin-bottom: 24px;
+    font-size: 13px;
+  }
+  .home__info {
+    flex-direction: column;
+  }
+  .home__info-cta {
+    margin-top: 7px;
+    margin-left: 7px;
+  }
+  .home__sale-actions {
+    flex-direction: column;
+  }
+  .home__sale-link {
+    justify-content: center;
+  }
+  .home__blogs {
+    display: flex;
+    flex-direction: column;
+    overflow-x: visible;
+    scroll-snap-type: none;
+  }
+
+  .home__blogs li {
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+    scroll-snap-align: none;
   }
 }

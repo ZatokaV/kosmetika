@@ -16,12 +16,12 @@ export default function Header() {
             </button>
 
             <ul className="header__menu">
-              <li className="header__menu-item">
+              <li className="header__menu-item header__desctop-element">
                 <a href="/catalog" className="header__menu-link">
                   Каталог
                 </a>
               </li>
-              <li className="header__menu-item">
+              <li className="header__menu-item header__tablet-element">
                 <a href="/login" className="header__menu-link">
                   Увійти
                 </a>
@@ -35,14 +35,27 @@ export default function Header() {
           </div>
 
           <div className="header__nav-right">
-            <div className="header__promo-buttons">
+            <div className="header__promo-buttons header__tablet-element">
               <button className="header__promo-button">Новинки</button>
               <div className="header__promo-separator"></div>
               <button className="header__promo-button">Акції</button>
             </div>
 
-            <div className="header__contact-button">
+            <div className="header__contact-button header__tablet-element">
               <button className="header__contact-button-inner">Контакти</button>
+            </div>
+
+            <div className="header__burger">
+              <input
+                type="checkbox"
+                id="burger-checkbox"
+                class="burger-checkbox"
+              ></input>
+              <label for="burger-checkbox" class="burger">
+                <span className="burger_border-line"></span>
+                <span className="burger_centr-line"></span>
+                <span className="burger_border-line"></span>
+              </label>
             </div>
           </div>
         </nav>
