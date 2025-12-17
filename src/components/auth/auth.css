@@ -1,0 +1,148 @@
+.auth__overlay {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  height: 734px;
+
+  background-color: rgba(255, 253, 250, 0.949);
+  z-index: 90;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  backdrop-filter: blur(8px);
+}
+
+.auth__modal {
+  background: #fffdfa;
+  width: 100%;
+  max-width: 480px;
+  padding: 48px;
+  border: 1px solid #ffe2e6;
+  border-radius: 24px;
+  position: relative;
+}
+
+.auth__tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 64px;
+}
+
+.auth__tab {
+  text-transform: uppercase;
+  padding: 12px 24px;
+  color: #ffe2e6;
+  transition: color 0.3s;
+  font-size: 32px !important;
+  font-family: "Foglihten", sans-serif !important;
+  font-weight: 500;
+}
+
+.auth__tab--active {
+  color: #78020e;
+  border-bottom: 1px solid var(--main-color);
+}
+
+.auth__input {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.auth__input-label {
+  font-size: 14px;
+}
+
+.auth__input-field {
+  padding: 14px 20px;
+  border: 1px solid var(--main-color);
+  border-radius: 24px;
+  font-size: 16px;
+  outline: none;
+  transition: box-shadow 0.3s;
+  &:focus {
+    box-shadow: 0 0 0 5px rgba(120, 2, 14, 0.1);
+  }
+}
+
+.auth__checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 72px;
+}
+
+.auth__checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: #78020e;
+  cursor: pointer;
+}
+.auth__checkbox-label {
+  text-transform: none;
+}
+
+.auth__checkbox-label a {
+  text-decoration: underline !important;
+}
+
+.auth__submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--main-color);
+  color: #fffdfa;
+  border: none;
+  border-radius: 24px;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: background 0.3s;
+  &:hover {
+    box-shadow: 0 0 0 5px rgba(120, 2, 14, 0.1);
+  }
+}
+
+.auth__google-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 16px;
+  border: 1px solid var(--main-color);
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  transition: background 0.3s;
+  &:hover {
+    box-shadow: 0 0 0 5px rgba(120, 2, 14, 0.1);
+  }
+}
+
+.auth__google-btn img {
+  width: 18px;
+  height: 18px;
+}
+
+.auth__success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.auth__success-title {
+  font-family: "Foglihten", serif !important;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.auth__success-text {
+  font-size: 14px;
+  margin-bottom: 30px;
+}

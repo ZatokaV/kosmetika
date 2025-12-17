@@ -1,3 +1,8 @@
+.home{
+  max-width: 1512;
+  margin: 0 auto;
+}
+
 .home__section {
   margin-bottom: 40px;
   margin-left: 36px;

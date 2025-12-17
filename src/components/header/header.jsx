@@ -1,7 +1,13 @@
+"use client";
 import React from "react";
 import "./header.css";
 
+import { useState } from "react";
+import AuthModal from "../auth/AuthModal";
+
 export default function Header() {
+  const [showAuth, setShowAuth] = useState(false);
+
   return (
     <header className="header">
       <div className="header__container">
@@ -22,7 +28,14 @@ export default function Header() {
                 </a>
               </li>
               <li className="header__menu-item header__tablet-element">
-                <a href="/login" className="header__menu-link">
+                <a
+                  href="#"
+                  className="header__menu-link"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setShowAuth(true);
+                  }}
+                >
                   Увійти
                 </a>
               </li>
@@ -60,6 +73,8 @@ export default function Header() {
           </div>
         </nav>
       </div>
+
+      {showAuth && <AuthModal onClose={() => setShowAuth(false)} />}
     </header>
   );
 }

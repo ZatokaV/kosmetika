@@ -1,3 +1,7 @@
+.header{
+  position: relative;
+}
+
 .header,
 .header button {
   text-transform: uppercase;
